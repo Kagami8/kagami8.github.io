@@ -5,7 +5,16 @@
         <link>https://kagami8.github.io/categories/</link>
         <description>Recent content in Categories on Kagami的园游会</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://kagami8.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 23 Jan 2024 12:14:34 -0800</lastBuildDate><atom:link href="https://kagami8.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>杂记</title>
+        <link>https://kagami8.github.io/categories/notes/</link>
+        <pubDate>Tue, 23 Jan 2024 12:14:34 -0800</pubDate>
+        
+        <guid>https://kagami8.github.io/categories/notes/</guid>
+        <description>&lt;img src="https://kagami8.github.io/categories/notes/cover.jpg" alt="Featured image of post 杂记" /&gt;</description>
+        </item>
+        <item>
         <title>旅行</title>
         <link>https://kagami8.github.io/categories/travel/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14,21 +23,12 @@
         <description>&lt;img src="https://kagami8.github.io/categories/travel/cover.jpg" alt="Featured image of post 旅行" /&gt;</description>
         </item>
         <item>
-        <title>美食</title>
+        <title>食记</title>
         <link>https://kagami8.github.io/categories/food/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://kagami8.github.io/categories/food/</guid>
-        <description>&lt;img src="https://kagami8.github.io/categories/food/cover.jpg" alt="Featured image of post 美食" /&gt;&lt;p&gt;Categories Test Here!!!&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>杂记</title>
-        <link>https://kagami8.github.io/categories/notes/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://kagami8.github.io/categories/notes/</guid>
-        <description>&lt;img src="https://kagami8.github.io/categories/notes/cover.jpg" alt="Featured image of post 杂记" /&gt;</description>
+        <description>&lt;img src="https://kagami8.github.io/categories/food/cover.jpg" alt="Featured image of post 食记" /&gt;</description>
         </item>
         <item>
         <title>总结</title>

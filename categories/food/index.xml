@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>美食 on Kagami的园游会</title>
+        <title>食记 on Kagami的园游会</title>
         <link>https://kagami8.github.io/categories/food/</link>
-        <description>Recent content in 美食 on Kagami的园游会</description>
+        <description>Recent content in 食记 on Kagami的园游会</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language><atom:link href="https://kagami8.github.io/categories/food/index.xml" rel="self" type="application/rss+xml" />
     </channel>
