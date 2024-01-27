@@ -6,30 +6,32 @@
         <description>Recent content in 杂记 on Kagami的园游会</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 23 Jan 2024 12:14:34 -0800</lastBuildDate><atom:link href="https://kagami8.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 23 Jan 2024 12:14:00 -0800</lastBuildDate><atom:link href="https://kagami8.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>重建Blog</title>
-        <link>https://kagami8.github.io/p/%E9%87%8D%E5%BB%BAblog/</link>
-        <pubDate>Tue, 23 Jan 2024 12:14:34 -0800</pubDate>
+        <link>https://kagami8.github.io/%E9%87%8D%E5%BB%BAblog/</link>
+        <pubDate>Tue, 23 Jan 2024 12:14:00 -0800</pubDate>
         
-        <guid>https://kagami8.github.io/p/%E9%87%8D%E5%BB%BAblog/</guid>
+        <guid>https://kagami8.github.io/%E9%87%8D%E5%BB%BAblog/</guid>
         <description>&lt;img src="https://kagami8.github.io/post/cover.jpg" alt="Featured image of post 重建Blog" /&gt;&lt;h1 id=&#34;为什么要重建blog&#34;&gt;为什么要重建Blog&lt;/h1&gt;
-&lt;p&gt;我们这一代人可能多少都点博客情怀。我从初中时代从Blog.cn开始写，有几个固定好友互相访问就足够开心，后来转到了博客巴士，再后来因为审查等原因渐渐不写了，也渐渐丢失了写作的习惯。&lt;/p&gt;
-&lt;p&gt;放弃了使用多年的豆瓣除了审查越来越严的原因之外，更直接的原因是我前些年身份证过期，豆瓣要我拿着证件拍照认证才能发言的要求，这个画面想象一下都令我不适。&lt;/p&gt;
+&lt;p&gt;我这个年纪的人可能多少都有点博客情怀。我是从初中时代从Blog.cn开始写点东西，那时候有几个固定好友互相访问就很开心，后来转到了博客巴士，再后来因为审查等原因渐渐不写了，也遗失了写作的习惯。&lt;/p&gt;
+&lt;p&gt;至于为什么放弃了使用多年的豆瓣，除了豆瓣这些年眼见着越来越严的审查机制，更直接的原因是我前些年身份证过期了，豆瓣要求我举着护照拍照才能实名认证，这个画面光想象一下都令我不适。&lt;/p&gt;
 &lt;p&gt;我其实并不是个表达欲很强的人，可还是需要一个简中匿名树洞，一个属于自己和几个至亲好友的独立精神空间。&lt;/p&gt;
 &lt;h1 id=&#34;建站工程&#34;&gt;建站工程&lt;/h1&gt;
-&lt;p&gt;技术：Hugo + Github Pages，网上随便搜一下就一大把教程。用Markdown language写博客也是新鲜的体验，真的很方便。&lt;/p&gt;
-&lt;p&gt;过程中主要向以下两位长毛象上关注的两位朋友学习：&lt;/p&gt;
+&lt;p&gt;第一次尝试静态博客，用的是Hugo + Github Pages，网上随便搜一下就一大把教程。用Markdown language写博客也是新鲜的体验，真的很方便。&lt;/p&gt;
+&lt;p&gt;主要向以下两位长毛象上关注的朋友学习：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.douchi.space/tags/blog/#gsc.tab=0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;椒盐豆豉的Blog相关文章列表&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;白石京的建站相关文章列表，很多有用的小插件&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;实际操作下来一天的时间就可以建站完毕，我建立了两个repo，一个公开存Hugo生成的public文件夹下的静态网站，一个private repo存我对模板的修改等等。&lt;/p&gt;
+    &gt;白石京的建站相关文章列表&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;实际操作下来一天的时间就可以建站完毕，我建立了两个repo，一个公开存Hugo生成的public文件夹下的静态网站，一个private repo存我对模板的修改等等。但装修花的时间应该是个无底洞了，哈哈。&lt;/p&gt;
 &lt;h1 id=&#34;下一步&#34;&gt;下一步&lt;/h1&gt;
-&lt;p&gt;买域名&lt;/p&gt;
+&lt;p&gt;写篇建站的文章，记录一下自己操作过程中遇到的问题。&lt;/p&gt;
+&lt;p&gt;买个域名&lt;/p&gt;
 &lt;p&gt;搬运点以前写的东西&lt;/p&gt;
 &lt;h1 id=&#34;写这篇的时候在听的音乐&#34;&gt;写这篇的时候在听的音乐&lt;/h1&gt;
-&lt;p&gt;换乘3的新插曲《Favorite》By POW，听着就很幸福。&lt;/p&gt;
-&lt;iframe style=&#34;border-radius:12px&#34; src=&#34;https://open.spotify.com/embed/track/7nJyY4piYE68bRfMTdeS5V?utm_source=generator&#34; width=&#34;100%&#34; height=&#34;352&#34; frameBorder=&#34;0&#34; allowfullscreen=&#34;&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;</description>
+&lt;p&gt;换乘3的插曲《Favorite》By POW，听着就很幸福啊。&lt;/p&gt;
+&lt;iframe style=&#34;border-radius:12px&#34; src=&#34;https://open.spotify.com/embed/track/7nJyY4piYE68bRfMTdeS5V?utm_source=generator&#34; width=&#34;100%&#34; height=&#34;352&#34; frameBorder=&#34;0&#34; allowfullscreen=&#34;&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=100% src=&#34;//music.163.com/outchain/player?type=2&amp;id=2090019907&amp;auto=1&amp;height=66&#34;&gt;&lt;/iframe&gt;</description>
         </item>
         
     </channel>
