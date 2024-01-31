@@ -3,24 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kagami8.github.io/</loc>
-    <lastmod>2024-01-27T14:06:00-08:00</lastmod>
+    <lastmod>2024-01-28T00:38:13-08:00</lastmod>
   </url><url>
     <loc>https://kagami8.github.io/tags/blog/</loc>
-    <lastmod>2024-01-27T14:06:00-08:00</lastmod>
+    <lastmod>2024-01-28T00:38:13-08:00</lastmod>
+  </url><url>
+    <loc>https://kagami8.github.io/blog/</loc>
+    <lastmod>2024-01-28T00:38:13-08:00</lastmod>
   </url><url>
     <loc>https://kagami8.github.io/categories/</loc>
-    <lastmod>2024-01-27T14:06:00-08:00</lastmod>
+    <lastmod>2024-01-28T00:38:13-08:00</lastmod>
   </url><url>
-    <loc>https://kagami8.github.io/post/</loc>
-    <lastmod>2024-01-27T14:06:00-08:00</lastmod>
+    <loc>https://kagami8.github.io/blog/post_2/</loc>
+    <lastmod>2024-01-28T00:38:13-08:00</lastmod>
   </url><url>
     <loc>https://kagami8.github.io/tags/</loc>
-    <lastmod>2024-01-27T14:06:00-08:00</lastmod>
+    <lastmod>2024-01-28T00:38:13-08:00</lastmod>
   </url><url>
     <loc>https://kagami8.github.io/categories/notes/</loc>
-    <lastmod>2024-01-27T14:06:00-08:00</lastmod>
+    <lastmod>2024-01-28T00:38:13-08:00</lastmod>
   </url><url>
-    <loc>https://kagami8.github.io/%E9%87%8D%E5%BB%BAblog/</loc>
+    <loc>https://kagami8.github.io/blog/post_1/</loc>
     <lastmod>2024-01-27T14:06:00-08:00</lastmod>
   </url><url>
     <loc>https://kagami8.github.io/page/</loc>
@@ -28,6 +31,15 @@
   </url><url>
     <loc>https://kagami8.github.io/archives/</loc>
     <lastmod>2024-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kagami8.github.io/blog/post_3/</loc>
+    <lastmod>2018-12-31T14:52:18-08:00</lastmod>
+  </url><url>
+    <loc>https://kagami8.github.io/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2018-12-31T14:52:18-08:00</lastmod>
+  </url><url>
+    <loc>https://kagami8.github.io/categories/summary/</loc>
+    <lastmod>2018-12-31T14:52:18-08:00</lastmod>
   </url><url>
     <loc>https://kagami8.github.io/%E5%85%B3%E4%BA%8E-about-me/</loc>
   </url><url>
@@ -37,8 +49,8 @@
   </url><url>
     <loc>https://kagami8.github.io/search/</loc>
   </url><url>
-    <loc>https://kagami8.github.io/%E5%8F%8B%E9%93%BE-links/</loc>
+    <loc>https://kagami8.github.io/categories/music/</loc>
   </url><url>
-    <loc>https://kagami8.github.io/categories/summary/</loc>
+    <loc>https://kagami8.github.io/%E5%8F%8B%E9%93%BE-links/</loc>
   </url>
 </urlset>

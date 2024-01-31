@@ -6,13 +6,77 @@
         <description>Recent content on Kagami的园游会</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 23 Jan 2024 12:14:00 -0800</lastBuildDate><atom:link href="https://kagami8.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 28 Jan 2024 00:38:13 -0800</lastBuildDate><atom:link href="https://kagami8.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo Blog留言板配置 - Twikoo &#43; Netlify</title>
+        <link>https://kagami8.github.io/blog/post_2/</link>
+        <pubDate>Sun, 28 Jan 2024 00:38:13 -0800</pubDate>
+        
+        <guid>https://kagami8.github.io/blog/post_2/</guid>
+        <description>&lt;h1 id=&#34;1-后端配置云函数部署&#34;&gt;1. 后端配置（云函数部署）&lt;/h1&gt;
+&lt;p&gt;两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着Twikoo官网的教程配置就可以很快搞定。&lt;/p&gt;
+&lt;p&gt;后端选择Netilify也是因为Twikoo对后端部署工具里给了Netilify最高的评价，评论是”有充足的免费额度，中国大陆访问速度不错。”&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/backend.html#netlify-%E9%83%A8%E7%BD%B2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;云函数部署 | Twikoo 文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这个官方教学涵盖了从数据库(MongoDB)建立，Netlify云函数部署，到双方链接的所有过程。&lt;/p&gt;
+&lt;h1 id=&#34;2-前端部署&#34;&gt;2. 前端部署&lt;/h1&gt;
+&lt;p&gt;简单来说就是在你的Hugo里设置留言板使用的后端云函数。&lt;/p&gt;
+&lt;p&gt;有的Hugo主题是已经设置好Twikoo的，比如我在用的Stack主题。只需要在整个hugo的设置文件里(此处以hugo.yaml为例)。将下面XXX的部分更换为你在云函数部署时注册的netlify三级域名即可。&lt;/p&gt;
+&lt;p&gt;语言不要忘记设置成中文，否则可能显示别的语言。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;comments&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;enabled&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;provider&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;twikoo&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;twikoo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;envId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://**XXX**.netlify.app/.netlify/functions/twikoo&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;zh-cn&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;3-twikoo版本升级&#34;&gt;3. Twikoo版本升级&lt;/h1&gt;
+&lt;p&gt;如果在测试留言板的时候，看到了需要更新到某版本的提醒，可以在工作目录中寻找&lt;strong&gt;twikoo.html&lt;/strong&gt;文件**，**然后将第一行代码里底下加粗的版本号更新为推荐的版本号。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;//cdn.jsdelivr.net/npm/twikoo@**1.6.31**/dist/twikoo.all.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;4-一些管理设置&#34;&gt;4. 一些管理设置&lt;/h1&gt;
+&lt;p&gt;这部分主要参考了象友白石京的这篇文章：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/twikoo-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;在静态博客里添加Twikoo评论系统，并配置邮箱和TG通知&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我跟着设定了&lt;code&gt;REQUIRED_FIELDS&lt;/code&gt;和&lt;code&gt;AKISMET_KEY&lt;/code&gt;垃圾过滤器，还有教如何设置邮件提醒。&lt;/p&gt;
+&lt;p&gt;想要补充的一点是，右下角这个小齿轮（管理入口）是可以隐藏的，只需要修改配置管理→ 通用 → &lt;code&gt;HIDE_ADMIN_CRYPT&lt;/code&gt; 的值， “隐藏管理面板入口。可设置一个“暗号”，只有在“昵称”一栏输入相同的“暗号”时，管理面板入口才会显示，留空则不隐藏管理入口”，算是双重保护吧。&lt;/p&gt;
+&lt;h1 id=&#34;5-怎么隐藏某些page的留言板&#34;&gt;5. 怎么隐藏某些page的留言板&lt;/h1&gt;
+&lt;p&gt;在需要的page的Front matter中加入（此处以yaml为例）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;comments&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
         <title>重建Blog</title>
-        <link>https://kagami8.github.io/%E9%87%8D%E5%BB%BAblog/</link>
+        <link>https://kagami8.github.io/blog/post_1/</link>
         <pubDate>Tue, 23 Jan 2024 12:14:00 -0800</pubDate>
         
-        <guid>https://kagami8.github.io/%E9%87%8D%E5%BB%BAblog/</guid>
-        <description>&lt;img src="https://kagami8.github.io/post/cover.jpg" alt="Featured image of post 重建Blog" /&gt;&lt;h1 id=&#34;为什么要重建blog&#34;&gt;为什么要重建Blog&lt;/h1&gt;
+        <guid>https://kagami8.github.io/blog/post_1/</guid>
+        <description>&lt;img src="https://kagami8.github.io/blog/post_1/images/cover.jpg" alt="Featured image of post 重建Blog" /&gt;&lt;h1 id=&#34;为什么要重建blog&#34;&gt;为什么要重建Blog&lt;/h1&gt;
 &lt;p&gt;我这个年纪的人可能多少都有点博客情怀。我是从初中时代从Blog.cn开始写点东西，那时候有几个固定好友互相访问就很开心，后来转到了博客巴士，再后来因为审查等原因渐渐不写了，也遗失了写作的习惯。&lt;/p&gt;
 &lt;p&gt;至于为什么放弃了使用多年的豆瓣，除了豆瓣这些年眼见着越来越严的审查机制，更直接的原因是我前些年身份证过期了，豆瓣要求我举着护照拍照才能实名认证，这个画面光想象一下都令我不适。&lt;/p&gt;
 &lt;p&gt;我其实并不是个表达欲很强的人，可还是需要一个简中匿名树洞，一个属于自己和几个至亲好友的独立精神空间。&lt;/p&gt;
@@ -40,6 +104,30 @@
         
         <guid>https://kagami8.github.io/archives/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>2018年终总结</title>
+        <link>https://kagami8.github.io/blog/post_3/</link>
+        <pubDate>Mon, 31 Dec 2018 14:52:18 -0800</pubDate>
+        
+        <guid>https://kagami8.github.io/blog/post_3/</guid>
+        <description>&lt;p&gt;2018年初我做了一个小手术，所幸切片结果也是良性。说小是因为对于医生来说手术很简单，但我体内这么大尺寸的异物其实是非常危险的。所以今年我最经常跟人开的玩笑是，假如生在古代，我基本上也就活到这个年纪了。&lt;/p&gt;
+&lt;p&gt;说之后的人生都是上天（现代医学）赐予的礼物虽然有点做作，但我这一年确实是率性而活的。我的病并没有明确的病因，也没什么预防的办法，医生和网络上的病友们说到最多的是保持好心情。的确，生死面前无大事，没什么好烦恼的。基金赔钱，房子跌价，瘦了十几斤又胖了回去，都不值得影响我的好心情。甚至下半年在高速上被一辆皮卡撞没了整个车屁股，我都可以边心悸着，边安慰撞我的老头。&lt;/p&gt;
+&lt;p&gt;之前的几年里，我最大的烦恼是到了这个年纪，竟然还不知道该做什么。我非常羡慕能找到自己的专长的人，我却似乎什么都能做，又都做不精。这一行长江后浪推前浪，五年后我会在什么位置真的无法想象，经常是睡前想着想着就失眠。今年我终于想开了，我们能看到的毕竟是极少数的成功案例，绝大多数的人可能穷其一生都找不到答案。而且这样的比较会严重打击自信，我因为休息了一年半，找工作时降低了标准，入职后才发现，太多技术不如我的人照样愉快地摸着鱼，之前的丧气其实完全没有必要。这对我2019年的启示是，晚饭过后千万不要思考人生。&lt;/p&gt;
+&lt;p&gt;2018年算是我第二年给自己设定目标，完成度比2017年高了很多，竟然达到了50%，成绩喜人。想买的东西，无论大小全部买了。想改掉的一些性格上毛病，六条里改了四条。想做的事里，最觉得有成就感的两件事，第一是回国的目标达成（还一不小心回了两次）。而且今年跟父母在一起的时间算起来有四个多月，算是补上了前两年没怎么陪他们的遗憾。第二是跟闺蜜一起旅游的目标，以特别的形式完成了——陪来我这里的豆友玩了一周。工作也是非常顺利地找到了，还成功换了组，同组的台湾妹子很欢快，菲律宾妹子很可爱，每天上班都如同girls night out。&lt;/p&gt;
+&lt;p&gt;当然还是有很多提高的空间。比如我很想做个content creator的梦想，今年并没有实现。为了锻炼自己的写作功力，我打算至少每个月写一篇日记，所以本该出现在本文下半部的2019新年计划，就留作我1月份的作业吧。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kagami8.github.io/blog/post_3/images/1.jpg#center&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;a&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;原发表于豆瓣&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>关于 | About Me</title>
