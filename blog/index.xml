@@ -12,13 +12,13 @@
         <pubDate>Sun, 28 Jan 2024 00:38:13 -0800</pubDate>
         
         <guid>https://kagami8.github.io/blog/post_2/</guid>
-        <description>&lt;h1 id=&#34;1-后端配置云函数部署&#34;&gt;1. 后端配置（云函数部署）&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;后端配置云函数部署&#34;&gt;后端配置（云函数部署）&lt;/h1&gt;
 &lt;p&gt;两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着Twikoo官网的教程配置就可以很快搞定。&lt;/p&gt;
 &lt;p&gt;后端选择Netilify也是因为Twikoo对后端部署工具里给了Netilify最高的评价，评论是”有充足的免费额度，中国大陆访问速度不错。”&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/backend.html#netlify-%E9%83%A8%E7%BD%B2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;云函数部署 | Twikoo 文档&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这个官方教学涵盖了从数据库(MongoDB)建立，Netlify云函数部署，到双方链接的所有过程。&lt;/p&gt;
-&lt;h1 id=&#34;2-前端部署&#34;&gt;2. 前端部署&lt;/h1&gt;
+&lt;h1 id=&#34;前端部署&#34;&gt;前端部署&lt;/h1&gt;
 &lt;p&gt;简单来说就是在你的Hugo里设置留言板使用的后端云函数。&lt;/p&gt;
 &lt;p&gt;有的Hugo主题是已经设置好Twikoo的，比如我在用的Stack主题。只需要在整个hugo的设置文件里(此处以hugo.yaml为例)。将下面XXX的部分更换为你在云函数部署时注册的netlify三级域名即可。&lt;/p&gt;
 &lt;p&gt;语言不要忘记设置成中文，否则可能显示别的语言。&lt;/p&gt;
@@ -42,23 +42,23 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;zh-cn&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;3-twikoo版本升级&#34;&gt;3. Twikoo版本升级&lt;/h1&gt;
-&lt;p&gt;如果在测试留言板的时候，看到了需要更新到某版本的提醒，可以在工作目录中寻找&lt;strong&gt;twikoo.html&lt;/strong&gt;文件**，**然后将第一行代码里底下加粗的版本号更新为推荐的版本号。&lt;/p&gt;
+&lt;/div&gt;&lt;h1 id=&#34;twikoo版本升级&#34;&gt;Twikoo版本升级&lt;/h1&gt;
+&lt;p&gt;如果在测试留言板的时候，看到了需要更新到某版本的提醒，可以在工作目录中寻找&lt;strong&gt;twikoo.html&lt;/strong&gt;文件，然后将第一行代码里的版本号(1.6.31)更新为推荐的版本号。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;//cdn.jsdelivr.net/npm/twikoo@**1.6.31**/dist/twikoo.all.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;//cdn.jsdelivr.net/npm/twikoo@1.6.31/dist/twikoo.all.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;4-一些管理设置&#34;&gt;4. 一些管理设置&lt;/h1&gt;
+&lt;/div&gt;&lt;h1 id=&#34;一些管理设置&#34;&gt;一些管理设置&lt;/h1&gt;
 &lt;p&gt;这部分主要参考了象友白石京的这篇文章：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/twikoo-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;在静态博客里添加Twikoo评论系统，并配置邮箱和TG通知&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;我跟着设定了&lt;code&gt;REQUIRED_FIELDS&lt;/code&gt;和&lt;code&gt;AKISMET_KEY&lt;/code&gt;垃圾过滤器，还有教如何设置邮件提醒。&lt;/p&gt;
 &lt;p&gt;想要补充的一点是，右下角这个小齿轮（管理入口）是可以隐藏的，只需要修改配置管理→ 通用 → &lt;code&gt;HIDE_ADMIN_CRYPT&lt;/code&gt; 的值， “隐藏管理面板入口。可设置一个“暗号”，只有在“昵称”一栏输入相同的“暗号”时，管理面板入口才会显示，留空则不隐藏管理入口”，算是双重保护吧。&lt;/p&gt;
-&lt;h1 id=&#34;5-怎么隐藏某些page的留言板&#34;&gt;5. 怎么隐藏某些page的留言板&lt;/h1&gt;
+&lt;h1 id=&#34;怎么隐藏某些page的留言板&#34;&gt;怎么隐藏某些page的留言板&lt;/h1&gt;
 &lt;p&gt;在需要的page的Front matter中加入（此处以yaml为例）：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -93,7 +93,7 @@
 &lt;p&gt;买个域名&lt;/p&gt;
 &lt;p&gt;搬运点以前写的东西&lt;/p&gt;
 &lt;h1 id=&#34;写这篇的时候在听的音乐&#34;&gt;写这篇的时候在听的音乐&lt;/h1&gt;
-&lt;p&gt;换乘3的插曲《Favorite》By POW，听着就很幸福啊。&lt;/p&gt;
+&lt;p&gt;换乘3的插曲《Dazzling》By POW，听着就很幸福啊。&lt;/p&gt;
 &lt;iframe style=&#34;border-radius:12px&#34; src=&#34;https://open.spotify.com/embed/track/7nJyY4piYE68bRfMTdeS5V?utm_source=generator&#34; width=&#34;100%&#34; height=&#34;352&#34; frameBorder=&#34;0&#34; allowfullscreen=&#34;&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
 &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=100% src=&#34;//music.163.com/outchain/player?type=2&amp;id=2090019907&amp;auto=1&amp;height=66&#34;&gt;&lt;/iframe&gt;</description>
         </item>
@@ -118,6 +118,184 @@
 	
 	
 &gt;&lt;/p&gt;
+&lt;p&gt;原发表于豆瓣&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>两人一狗的多伦多-温哥华自驾搬家行（Trans Canada Highway加拿大一号公路）</title>
+        <link>https://kagami8.github.io/blog/post_6/</link>
+        <pubDate>Sat, 05 Aug 2017 19:19:40 -0800</pubDate>
+        
+        <guid>https://kagami8.github.io/blog/post_6/</guid>
+        <description>&lt;img src="https://kagami8.github.io/blog/post_6/images/4.webp" alt="Featured image of post 两人一狗的多伦多-温哥华自驾搬家行（Trans Canada Highway加拿大一号公路）" /&gt;&lt;p&gt;两周前我和男票带着Hudson，从多伦多开车沿着Trans-Canada Highway（一号公路）搬家到了温哥华。我俩是长途旅行菜鸟，网上没找到太多资料，所以在行程计划上太天真，路上也犯了不少错误，所幸还是顺利到达了。想记录下这一路发生的事情给自己留作纪念，也希望给以后需要开这路线的朋友们一点参考。&lt;/p&gt;
+&lt;h1 id=&#34;第一天toronto---thunder-bay&#34;&gt;第一天：Toronto - Thunder Bay&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://kagami8.github.io/blog/post_6/images/1.webp#center&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Day1&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;路程1377km 行驶15个小时左右
+住宿：Holiday Inn Express &amp;amp; Suites（当天订）税前C$160.7，含早餐 宠物费税前C$15&lt;/p&gt;
+&lt;p&gt;出发耽搁了些，10点左右离开多伦多，是走惯了的401高速向西，接着400向北，只不过因为是搬走所以心情并不像出去玩的时候那么轻松。400向北出了旺市就是典型的丘陵景色，当时的天气时晴时阴，雾蒙蒙的看起来很像英国的感觉。在Barrie微微转西往Sudbury的一段，我们遇见了一场暴雨，雨大到雨刷都不够用，几乎什么都看不见。因为在最左道，不方便紧急停车，我们就开着应急灯缓缓跟着前车，不到十分钟就出了雨最大的区域。我们第一次遇见这种情况，很庆幸当时没有选择停下，感觉停下等雨过去就很耽误时间了。&lt;/p&gt;
+&lt;p&gt;接着高速消失，限速90km/h，双车道，每隔几公里给一段超车道，这样的路况几乎持续到出安省，只有在快进入城市时会多些车道。中午到Sudbury高速下口吃了A&amp;amp;W，下午六点赶到了Sault Ste. Marie，其实这里才是正常情况下第一晚应该休息的地方。可我们太天真，安排了很变态的行程，甚至提前订好了第二晚在Regina的酒店，所以不得不吃个饭后赶紧硬着头皮赶剩下800公里。&lt;/p&gt;
+&lt;p&gt;从Sault Ste. Marie出发也还是一样路况的山路，太阳落山前能时常看到苏必利尔湖在余晖下闪耀，还算是挺享受。可天黑以后我们就傻眼了，路边根本没有路灯，路绕着丘陵地带左拐右拐，只能追随地上的反光线，是全程最艰难的一段。还算幸运的是夏天出行，十点多天才全黑，可黑夜后我们还是开了四五个小时，现在回想起来还是很后怕。而且因为不知道油箱掉半就得加满这种常识，山区中差点找不到加油站，而且我被山里的毒蚊子咬得好惨，加个油的功夫被咬了七口，还个个肿得非常厉害。山区还有个问题是手机没有信号，差一丢丢就没有订到酒店。而且万幸我们有车载GPS，如果靠手机可能就麻烦了。&lt;/p&gt;
+&lt;p&gt;最终我们凌晨两点多才赶到酒店，酒店条件还不错，check-in也很快。Hudson在路上吐了一小点，估计是有些晕车，我们之后几天尽量减少早餐的量，午餐晚餐多喂些。&lt;/p&gt;
+&lt;h1 id=&#34;第二天thunder-bay---regina&#34;&gt;第二天：Thunder Bay - Regina&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://kagami8.github.io/blog/post_6/images/2.webp#center&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Day2&#34;
+	
+	
+&gt;
+路程1292km 行驶14个小时左右
+住宿：Executive Royal Hotel（提前两天订）税前C$122.5 不含早餐, 宠物费税前C$25&lt;/p&gt;
+&lt;p&gt;因为前一天凌晨两三点才到，九点多我们起床吃了早饭，然后让Hudson在停车场跟其他狗狗们运动了一下，加满油出发的时候已经是十点多了。出Thunder Bay的路上因为修车堵了一段，后来才知道这是常态。今天的路况和昨天一样，限速90km/h，双车道，每隔几公里给一段超车道。中午到达一个叫Drydon的小镇吃了KFC炸鸡，因为一路上的面包吃得我有些崩溃。下午为了让驾驶有趣些，我把开车想象成小比赛。单车道时一个慢车就可以压住所有的车（倒是偶尔会出现可以占对方车道超车的虚线），这很像是F1里面的安全车啊，然后当路标提示还有几公里给超车道的时候，我就感觉跟安全车快走了一样，等超车道一来大家就全部重新洗牌。超车道结束了，可能又会碰见一辆“安全车”，必须跟到下一次超车道出现。这样一路开出安省，我还觉得蛮有趣的。&lt;/p&gt;
+&lt;p&gt;以为跨省会很华丽的我俩，只看见一个“曼省欢迎你”的牌牌就进入了曼尼托巴省。进曼省后不久，我们就走上了单向双车道的笔直的康庄大道！啊，现在回想那时候还是满满的幸福感。打开巡航，小脚可以解放一小会儿，僵硬的身子也可以稍微扭一下。这就算是进入了加拿大中部的大平原，这样美好的路况也一直持续到卡尔加里，只是限速时而110km/h，时而100km/h，需要留个心。下午6点左右我们到曼省首府Winnipeg短暂修整，如果时间充裕，应该在这里休息一晚。休息过后我们又赶夜路向萨省首府Regina进发，因为路上跨了两次时区，准备进入Regina的时候是当地时间凌晨零点多，实则是东部时间凌晨两点多。Regina市东郊在大修路，到处都是路障筒子封路，有的地方筒子漏了就容易走岔，大晚上又没有别的车带路，走得超级痛苦。室内的高速也在修，我们有段被赶下高速，但还好市内车稍微多些。好不容易到了酒店，给了个离前台最近的房间，条件不如前一晚，长处是有狗盆，然后爸妈非要视频看看我（狗），视频完就赶紧休息了。&lt;/p&gt;
+&lt;h1 id=&#34;第三天regina---calgary&#34;&gt;第三天：Regina - Calgary&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://kagami8.github.io/blog/post_6/images/3.webp#center&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Day3&#34;
+	
+	
+&gt;
+路程746km 行驶7个半小时
+住宿：Holiday Inn Calgary-Airport （当天订）税前C$154.3，含早餐，宠物费税前C$20&lt;/p&gt;
+&lt;p&gt;早上起来想去确认下有没有早餐吃，结果门一开Hudson先冲出去了，他冲到了前台扑了上去，前台哥们儿给了他一个爱的摸头，我俩心想完蛋了他肯定要尿了。然后就看见Hudson慢慢向我们走回来，一脸使劲憋尿样子，弓着背，一抽一抽地边走边尿了几滴，然后又走了一步，终于哗啦啦地尿了出来。我们只能帮忙稍微清洗了地毯（之后酒店有专门的人来清理），看Hudson知道错了，又已经那么努力地憋尿，也不舍得怪他。&lt;/p&gt;
+&lt;p&gt;今天是最轻松的一天，一路平原，而且终于不！用！赶！夜！路！下午五六点到了卡尔加里，酒店也是路上订的，因为第一晚对Holiday Inn印象太好所以又订了他家，到酒店男票已累瘫，所以我们随便找了家最近的中餐馆犒劳下一路Tim Horton&amp;rsquo;s搞定的胃，然后补了集极限挑战就睡了。我查了下，感觉卡城有很多好吃的，以后希望能回来玩。&lt;/p&gt;
+&lt;h1 id=&#34;第四天calgary---vancouver&#34;&gt;第四天：Calgary - Vancouver&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://kagami8.github.io/blog/post_6/images/4.webp#center&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Day4&#34;
+	
+	
+&gt;
+路程981km 行驶10个半小时左右（正常路况）
+最后一天还是很兴奋哒，卡尔加里出来一小时车程路过班夫国家公园，可惜这次没时间去玩。进入BC省后，路况又变成了跟安省一样的那种双车道，偶尔给超车道，限速90km/h的公路。&lt;/p&gt;
+&lt;p&gt;这一路很Drama，首先是超车时被一辆警车鸣笛，以为要献出第一次的时候，警车过了三秒又突然不响了。接着是最近BC省和持续的山火，烧得很多高速封路，甚至听说阿省的班夫国家公园也关闭了。我们路上也碰到了一次大约半个小时的停留，下车溜了溜Hudson。虽然没看到具体怎么回事，但山间飘着黑烟，也闻到了很刺鼻的气味，通路后又看到了两旁一些被烧得只剩杆儿的树，应该是因为山火。&lt;/p&gt;
+&lt;p&gt;走到一个名叫Three Valley Lake湖边时候，又停了，这次空气很清新，不像是山火。我们总想打听些情况，发生了什么，什么时候能通路。可老外真的是很会享受生活啊，好多人直接换上泳装跳湖了！一位从安省退休搬到维多利亚的阿姨来跟我们聊天，她说是因为前面有油漆洒在路上，说twitter上有人每个整点更新情况，我们才开始抱着手机关注Drive BC官网上的更新。外面二十七八摄氏度，我们在太阳下被烤了两个小时，还好之前学的教训，加满了油，才能保证一直给Hudson吹空调降温。等了将近两个小时后，我们继续上路。&lt;/p&gt;
+&lt;p&gt;过了Kamloops后有两条路可以往Vancouver走，继续走Trans-Canada Highway一号公路或者走BC省5号高速，5号高速会快很多，而且一号公路很多地方因为山火封路了。上了5号公路总算看到了一路上最高的限速：120km/h，虽然是山路，但是转弯和缓，单向双车道，路也很新。这段开得很顺，可快进Vancouver下车加油的时候，我整个人是晕的，感觉不是自己在晃，就是脚底下的地面在动。所以最后的部分又换男票开，快到温哥华终于晚上八点半到了新家。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kagami8.github.io/blog/post_6/images/5.webp#center&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+由上到下：苏必利尔湖畔丘陵，中部大平原，落基山脉，列治文夜景&lt;/p&gt;
+&lt;p&gt;4天开了4400公里确实有些疯狂，一路的景观是最大的享受，如果再来一次我肯定不会再选择这样匆忙赶路。这一路最大的教训和经验是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不要开夜车！因为高速旁几乎没有路灯。&lt;/li&gt;
+&lt;li&gt;油箱掉下一半无条件要加满，可能路上发生各种状况。&lt;/li&gt;
+&lt;li&gt;开山区一定要有车载GPS，手机会没信号。&lt;/li&gt;
+&lt;li&gt;每隔一两个小时就让司机和车都休息一下，如果时间充裕，每天少开几个小时。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;原发表于豆瓣&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>领养狗狗的二三事</title>
+        <link>https://kagami8.github.io/blog/post_4/</link>
+        <pubDate>Mon, 26 Sep 2016 10:56:48 -0800</pubDate>
+        
+        <guid>https://kagami8.github.io/blog/post_4/</guid>
+        <description>&lt;img src="https://kagami8.github.io/blog/post_4/images/3.webp" alt="Featured image of post 领养狗狗的二三事" /&gt;&lt;p&gt;2016年，我领养了一只非常聪明健康的拉布拉多mix，身边有很多朋友关心我是怎么接触到领养的，写篇日记记录下领养狗狗的心得。&lt;/p&gt;
+&lt;h1 id=&#34;如何获得一只狗宝&#34;&gt;如何获得一只狗宝&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;找专业breeder预约购买&lt;br&gt;
+适合追求纯种狗狗的朋友，最了解狗狗父母的情况，售后比宠物店有保证（有问题比较好回去问）。短处是产量有限要等很久，一些很受欢迎的犬种可能要等几年。&lt;/li&gt;
+&lt;li&gt;宠物店购买&lt;br&gt;
+长处是能见到狗狗，短处是价格通常偏高。&lt;/li&gt;
+&lt;li&gt;易物网站购买&lt;br&gt;
+需要擦亮眼睛仔细甄别。&lt;/li&gt;
+&lt;li&gt;领养&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;关于寄养&#34;&gt;关于寄养&lt;/h1&gt;
+&lt;p&gt;讲到领养之前还想介绍两个短期养狗的办法，对于很喜欢狗狗，但还不是很确定能否对狗狗负责一辈子的朋友们很合适。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Dog Sitting。&lt;br&gt;
+顾名思义就跟Baby Sitting一样，在主人或者寄养主人（foster parents）没法照顾狗狗的时候，短期照顾狗狗几天，通常需要的物资都会有人提供。
+&lt;img src=&#34;https://kagami8.github.io/blog/post_4/images/1.webp#center&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;a&#34;
+	
+	
+&gt;
+ &lt;center&gt;同事dog sitting过的哈士奇，墨西哥MM。&lt;/center&gt;
+&lt;/li&gt;
+&lt;li&gt;Fostering（寄养）&lt;br&gt;
+寄养时间从几个月到几年不等，同样物资和去宠物医院都不用自己花费。寄养父母的责任比dog sitting多一些，通常需要带狗狗例行健康检查，埋芯片，参加领养活动，等等。寄养父母通常有领养狗狗的优先权，可以跟狗狗相处一阵后，慎重决定是否领养。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在做功课的过程中我了解到的的Fostering（寄养）方式主要有下面三种：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;寄养服务犬（例如导盲犬）的小狗崽&lt;br&gt;
+专业服务犬机构会一直需要foster parents（寄养父母）照顾小狗一直到他们成为合格的服务犬，这种寄养方式持续时间可能长达几年，期间需要经常带小狗去接受训练。这种方式的排队时间相对最长，谁不爱puppy呢？&lt;/li&gt;
+&lt;li&gt;本地shelter（避难所）也常年招收寄养父母&lt;br&gt;
+这次我没申请，但听说对寄养父母要求比较高，有人因为住公寓被拒过。&lt;/li&gt;
+&lt;li&gt;找本地Dog Rescue（狗狗救助）机构做寄养父母&lt;br&gt;
+Dog Rescue机构通常没有自己的shelter（避难所），所以救来的狗狗一旦运输到机构所在的城市，就直接交给寄养父母。也就是说，多一对寄养父母就能多救一只狗。而寄养父母通常会养到狗狗直到他们被领养为止，时间少则几周，多则几个月。如果有领养活动最好带狗狗去参加，能增加狗狗被领养的机会。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;从寄养到领养&#34;&gt;从寄养到领养&lt;/h1&gt;
+&lt;p&gt;今年我通过同事第一次了解到foster（寄养），觉得很适合我现在的状况。我住的是公寓，又特别喜欢大狗，担心没后院让狗狗撒欢对狗狗不公平，所以计划先从寄养妈妈做起。可是我完全没有想到自己能这么幸运，第一次foster就碰到了Hudson，他活泼又聪明，特别疼人儿。一开始我们并没下决心领养Hudson，先允许Dog Rescue把Hudson的照片发出去，当天就收满了领养申请。因为有些不方便说的原因我们纠结了很久，救狗机构的工作人员们给了我很多鼓励，不断告诉我一个后院与狗狗能接受到多少锻炼和爱毫无关联。现在每天看到他都在庆幸当初把他留下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kagami8.github.io/blog/post_4/images/2.webp#center&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;a&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;center&gt;Hudson第一天来我家的时候拍的，一岁半的拉布拉多串串，街头小霸王。&lt;/center&gt;
+&lt;h1 id=&#34;领养的好处&#34;&gt;领养的好处&lt;/h1&gt;
+&lt;p&gt;寄养和领养在加拿大其实已经是一个蛮成熟的机制，回想起来以下几个原因让我觉得寄养和领养是非常好的选择：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;狗狗已经做完绝育手术和打完所有疫苗，大部分机构会埋好定位芯片。&lt;/li&gt;
+&lt;li&gt;吃过苦的狗狗会对主人给予的一切格外感激。&lt;/li&gt;
+&lt;li&gt;省钱。我的领养费是400加币，远低于市面上一只拉布拉多的价格。&lt;/li&gt;
+&lt;li&gt;很多时候其实是救了一条生命。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;当然寄养和领养也需要主人付出稍微多一点点，耐心纠正狗狗的一些毛病，慢慢跟狗狗培养感情。Hudson初到家的时候不知道自己新取的名字，跟个小疯子一样，栓两条绳子才能控制住，第一周我们俩的手每天都是疼的。更多的情况下，救助来的狗狗容易害怕，这时候就更需要主人耐心，培养人与狗之间的信任，这是个很漫长却又很有成就感的过程。现在他改了许多，身上的伤疤都在慢慢长好，会看我们等我们，对主人和家都有了意识，还学会了很多tricks。现在我们的计划是等Hudson表现足够好的时候，再继续Foster狗狗。&lt;/p&gt;
+&lt;h1 id=&#34;最后推荐个多伦多本地dog-rescue机构&#34;&gt;最后推荐个多伦多本地dog rescue机构&lt;/h1&gt;
+&lt;p&gt;我领养狗子的机构（多伦多的Black Dog Rescue）已经停运了，原成员又建立了一个新的Rescue，做的也不错的样子。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.muttsdogrescue.ca/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网: https://www.muttsdogrescue.ca/&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.instagram.com/mutts_dogrescue/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Instagram: https://www.instagram.com/mutts_dogrescue/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;结尾还是那句老话，希望大家慎重决定是否养狗，多以领养代替购买。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kagami8.github.io/blog/post_4/images/3.webp#center&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;a&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;center&gt;图片来自网络，有任何侵权问题请提醒我删除。&lt;/center&gt;
 &lt;p&gt;原发表于豆瓣&lt;/p&gt;
 </description>
         </item>

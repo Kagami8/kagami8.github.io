@@ -12,13 +12,13 @@
         <pubDate>Sun, 28 Jan 2024 00:38:13 -0800</pubDate>
         
         <guid>https://kagami8.github.io/blog/post_2/</guid>
-        <description>&lt;h1 id=&#34;1-后端配置云函数部署&#34;&gt;1. 后端配置（云函数部署）&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;后端配置云函数部署&#34;&gt;后端配置（云函数部署）&lt;/h1&gt;
 &lt;p&gt;两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着Twikoo官网的教程配置就可以很快搞定。&lt;/p&gt;
 &lt;p&gt;后端选择Netilify也是因为Twikoo对后端部署工具里给了Netilify最高的评价，评论是”有充足的免费额度，中国大陆访问速度不错。”&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/backend.html#netlify-%E9%83%A8%E7%BD%B2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;云函数部署 | Twikoo 文档&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这个官方教学涵盖了从数据库(MongoDB)建立，Netlify云函数部署，到双方链接的所有过程。&lt;/p&gt;
-&lt;h1 id=&#34;2-前端部署&#34;&gt;2. 前端部署&lt;/h1&gt;
+&lt;h1 id=&#34;前端部署&#34;&gt;前端部署&lt;/h1&gt;
 &lt;p&gt;简单来说就是在你的Hugo里设置留言板使用的后端云函数。&lt;/p&gt;
 &lt;p&gt;有的Hugo主题是已经设置好Twikoo的，比如我在用的Stack主题。只需要在整个hugo的设置文件里(此处以hugo.yaml为例)。将下面XXX的部分更换为你在云函数部署时注册的netlify三级域名即可。&lt;/p&gt;
 &lt;p&gt;语言不要忘记设置成中文，否则可能显示别的语言。&lt;/p&gt;
@@ -42,23 +42,23 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;zh-cn&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;3-twikoo版本升级&#34;&gt;3. Twikoo版本升级&lt;/h1&gt;
-&lt;p&gt;如果在测试留言板的时候，看到了需要更新到某版本的提醒，可以在工作目录中寻找&lt;strong&gt;twikoo.html&lt;/strong&gt;文件**，**然后将第一行代码里底下加粗的版本号更新为推荐的版本号。&lt;/p&gt;
+&lt;/div&gt;&lt;h1 id=&#34;twikoo版本升级&#34;&gt;Twikoo版本升级&lt;/h1&gt;
+&lt;p&gt;如果在测试留言板的时候，看到了需要更新到某版本的提醒，可以在工作目录中寻找&lt;strong&gt;twikoo.html&lt;/strong&gt;文件，然后将第一行代码里的版本号(1.6.31)更新为推荐的版本号。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;//cdn.jsdelivr.net/npm/twikoo@**1.6.31**/dist/twikoo.all.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;//cdn.jsdelivr.net/npm/twikoo@1.6.31/dist/twikoo.all.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;4-一些管理设置&#34;&gt;4. 一些管理设置&lt;/h1&gt;
+&lt;/div&gt;&lt;h1 id=&#34;一些管理设置&#34;&gt;一些管理设置&lt;/h1&gt;
 &lt;p&gt;这部分主要参考了象友白石京的这篇文章：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/twikoo-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;在静态博客里添加Twikoo评论系统，并配置邮箱和TG通知&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;我跟着设定了&lt;code&gt;REQUIRED_FIELDS&lt;/code&gt;和&lt;code&gt;AKISMET_KEY&lt;/code&gt;垃圾过滤器，还有教如何设置邮件提醒。&lt;/p&gt;
 &lt;p&gt;想要补充的一点是，右下角这个小齿轮（管理入口）是可以隐藏的，只需要修改配置管理→ 通用 → &lt;code&gt;HIDE_ADMIN_CRYPT&lt;/code&gt; 的值， “隐藏管理面板入口。可设置一个“暗号”，只有在“昵称”一栏输入相同的“暗号”时，管理面板入口才会显示，留空则不隐藏管理入口”，算是双重保护吧。&lt;/p&gt;
-&lt;h1 id=&#34;5-怎么隐藏某些page的留言板&#34;&gt;5. 怎么隐藏某些page的留言板&lt;/h1&gt;
+&lt;h1 id=&#34;怎么隐藏某些page的留言板&#34;&gt;怎么隐藏某些page的留言板&lt;/h1&gt;
 &lt;p&gt;在需要的page的Front matter中加入（此处以yaml为例）：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
