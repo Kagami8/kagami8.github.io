@@ -8,10 +8,10 @@
         <language>zh-cn</language>
         <lastBuildDate>Sun, 28 Jan 2024 00:38:13 -0800</lastBuildDate><atom:link href="https://kagami8.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo Blog留言板配置 - Twikoo &#43; Netlify</title>
-        <link>https://kagami8.github.io/blog/post_2/</link>
+        <link>https://kagami8.github.io/blog/hugo-blog%E7%95%99%E8%A8%80%E6%9D%BF%E9%85%8D%E7%BD%AE-twikoo-&#43;-netlify/</link>
         <pubDate>Sun, 28 Jan 2024 00:38:13 -0800</pubDate>
         
-        <guid>https://kagami8.github.io/blog/post_2/</guid>
+        <guid>https://kagami8.github.io/blog/hugo-blog%E7%95%99%E8%A8%80%E6%9D%BF%E9%85%8D%E7%BD%AE-twikoo-&#43;-netlify/</guid>
         <description>&lt;h1 id=&#34;后端配置云函数部署&#34;&gt;后端配置（云函数部署）&lt;/h1&gt;
 &lt;p&gt;两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着Twikoo官网的教程配置就可以很快搞定。&lt;/p&gt;
 &lt;p&gt;后端选择Netilify也是因为Twikoo对后端部署工具里给了Netilify最高的评价，评论是”有充足的免费额度，中国大陆访问速度不错。”&lt;/p&gt;
@@ -72,10 +72,10 @@
         </item>
         <item>
         <title>重建Blog</title>
-        <link>https://kagami8.github.io/blog/post_1/</link>
+        <link>https://kagami8.github.io/blog/%E9%87%8D%E5%BB%BAblog/</link>
         <pubDate>Tue, 23 Jan 2024 12:14:00 -0800</pubDate>
         
-        <guid>https://kagami8.github.io/blog/post_1/</guid>
+        <guid>https://kagami8.github.io/blog/%E9%87%8D%E5%BB%BAblog/</guid>
         <description>&lt;img src="https://kagami8.github.io/blog/post_1/images/cover.jpg" alt="Featured image of post 重建Blog" /&gt;&lt;h1 id=&#34;为什么要重建blog&#34;&gt;为什么要重建Blog&lt;/h1&gt;
 &lt;p&gt;我这个年纪的人可能多少都有点博客情怀。我是从初中时代从Blog.cn开始写点东西，那时候有几个固定好友互相访问就很开心，后来转到了博客巴士，再后来因为审查等原因渐渐不写了，也遗失了写作的习惯。&lt;/p&gt;
 &lt;p&gt;至于为什么放弃了使用多年的豆瓣，除了豆瓣这些年眼见着越来越严的审查机制，更直接的原因是我前些年身份证过期了，豆瓣要求我举着护照拍照才能实名认证，这个画面光想象一下都令我不适。&lt;/p&gt;
@@ -99,10 +99,10 @@
         </item>
         <item>
         <title>领养狗狗的二三事</title>
-        <link>https://kagami8.github.io/blog/post_4/</link>
+        <link>https://kagami8.github.io/blog/%E9%A2%86%E5%85%BB%E7%8B%97%E7%8B%97%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B/</link>
         <pubDate>Mon, 26 Sep 2016 10:56:48 -0800</pubDate>
         
-        <guid>https://kagami8.github.io/blog/post_4/</guid>
+        <guid>https://kagami8.github.io/blog/%E9%A2%86%E5%85%BB%E7%8B%97%E7%8B%97%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B/</guid>
         <description>&lt;img src="https://kagami8.github.io/blog/post_4/images/3.webp" alt="Featured image of post 领养狗狗的二三事" /&gt;&lt;p&gt;2016年，我领养了一只非常聪明健康的拉布拉多mix，身边有很多朋友关心我是怎么接触到领养的，写篇日记记录下领养狗狗的心得。&lt;/p&gt;
 &lt;h1 id=&#34;如何获得一只狗宝&#34;&gt;如何获得一只狗宝&lt;/h1&gt;
 &lt;ol&gt;

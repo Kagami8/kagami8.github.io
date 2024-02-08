@@ -8,10 +8,10 @@
         <language>zh-cn</language>
         <lastBuildDate>Sun, 28 Jan 2024 00:38:13 -0800</lastBuildDate><atom:link href="https://kagami8.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo Blog留言板配置 - Twikoo &#43; Netlify</title>
-        <link>https://kagami8.github.io/blog/post_2/</link>
+        <link>https://kagami8.github.io/blog/hugo-blog%E7%95%99%E8%A8%80%E6%9D%BF%E9%85%8D%E7%BD%AE-twikoo-&#43;-netlify/</link>
         <pubDate>Sun, 28 Jan 2024 00:38:13 -0800</pubDate>
         
-        <guid>https://kagami8.github.io/blog/post_2/</guid>
+        <guid>https://kagami8.github.io/blog/hugo-blog%E7%95%99%E8%A8%80%E6%9D%BF%E9%85%8D%E7%BD%AE-twikoo-&#43;-netlify/</guid>
         <description>&lt;h1 id=&#34;后端配置云函数部署&#34;&gt;后端配置（云函数部署）&lt;/h1&gt;
 &lt;p&gt;两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着Twikoo官网的教程配置就可以很快搞定。&lt;/p&gt;
 &lt;p&gt;后端选择Netilify也是因为Twikoo对后端部署工具里给了Netilify最高的评价，评论是”有充足的免费额度，中国大陆访问速度不错。”&lt;/p&gt;
