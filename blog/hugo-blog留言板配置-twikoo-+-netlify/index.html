@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='后端配置（云函数部署） 两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着Twikoo官网的教程配置就可以很快搞定。 后端'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='为你的Hugo博客设置留言板，分为后端配置和前端部署两个主要步骤。 两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着T'>
 <title>Hugo Blog留言板配置 - Twikoo &#43; Netlify</title>
 
 <link rel='canonical' href='https://kagami8.github.io/blog/hugo-blog%E7%95%99%E8%A8%80%E6%9D%BF%E9%85%8D%E7%BD%AE-twikoo-&#43;-netlify/'>
 
 <link rel="stylesheet" href="/scss/style.min.b1ed7a913ba2854100356022d9e6bd4a5df9664261e9b07de90f616412427494.css"><meta property='og:title' content='Hugo Blog留言板配置 - Twikoo &#43; Netlify'>
-<meta property='og:description' content='后端配置（云函数部署） 两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着Twikoo官网的教程配置就可以很快搞定。 后端'>
+<meta property='og:description' content='为你的Hugo博客设置留言板，分为后端配置和前端部署两个主要步骤。 两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着T'>
 <meta property='og:url' content='https://kagami8.github.io/blog/hugo-blog%E7%95%99%E8%A8%80%E6%9D%BF%E9%85%8D%E7%BD%AE-twikoo-&#43;-netlify/'>
 <meta property='og:site_name' content='Kagami的园游会'>
-<meta property='og:type' content='article'><meta property='article:section' content='Blog' /><meta property='article:tag' content='blog' /><meta property='article:published_time' content='2024-01-28T00:38:13-08:00'/><meta property='article:modified_time' content='2024-01-28T00:38:13-08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Blog' /><meta property='article:tag' content='blog' /><meta property='article:published_time' content='2024-01-28T00:38:13-08:00'/><meta property='article:modified_time' content='2024-01-28T00:38:13-08:00'/><meta property='og:image' content='https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&amp;w=2970&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
 <meta name="twitter:title" content="Hugo Blog留言板配置 - Twikoo &#43; Netlify">
-<meta name="twitter:description" content="后端配置（云函数部署） 两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着Twikoo官网的教程配置就可以很快搞定。 后端">
+<meta name="twitter:description" content="为你的Hugo博客设置留言板，分为后端配置和前端部署两个主要步骤。 两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着T"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&amp;w=2970&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -262,8 +263,16 @@
 
 
             <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/blog/hugo-blog%E7%95%99%E8%A8%80%E6%9D%BF%E9%85%8D%E7%BD%AE-twikoo-&#43;-netlify/">
+                
+                    <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&amp;w=2970&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" loading="lazy" alt="Featured image of post Hugo Blog留言板配置 - Twikoo &#43; Netlify" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
@@ -330,15 +339,16 @@
     <section class="article-content">
     
     
-    <h1 id="后端配置云函数部署">后端配置（云函数部署）</h1>
+    <p>为你的Hugo博客设置留言板，分为后端配置和前端部署两个主要步骤。</p>
 <p>两位象友都用的Twikoo实现留言板，所以没有浪费时间做抉择，基本上跟着Twikoo官网的教程配置就可以很快搞定。</p>
-<p>后端选择Netilify也是因为Twikoo对后端部署工具里给了Netilify最高的评价，评论是”有充足的免费额度，中国大陆访问速度不错。”</p>
+<h1 id="后端配置云函数部署">后端配置（云函数部署）</h1>
+<p>后端选择Netilify也是因为Twikoo对后端部署的众多平台里，给了Netilify最高的评价，评论是“有充足的免费额度，中国大陆访问速度不错。”</p>
+<p>下面这个官方教学涵盖了从数据库(MongoDB)建立，Netlify云函数部署，到双方链接的所有过程，跟着一步一步做就可以了。</p>
 <p><a class="link" href="https://twikoo.js.org/backend.html#netlify-%E9%83%A8%E7%BD%B2"  target="_blank" rel="noopener"
     >云函数部署 | Twikoo 文档</a></p>
-<p>这个官方教学涵盖了从数据库(MongoDB)建立，Netlify云函数部署，到双方链接的所有过程。</p>
 <h1 id="前端部署">前端部署</h1>
-<p>简单来说就是在你的Hugo里设置留言板使用的后端云函数。</p>
-<p>有的Hugo主题是已经设置好Twikoo的，比如我在用的Stack主题。只需要在整个hugo的设置文件里(此处以hugo.yaml为例)。将下面XXX的部分更换为你在云函数部署时注册的netlify三级域名即可。</p>
+<p>简单来说就是在你的Hugo里设置留言板连接的云函数。</p>
+<p>有的Hugo主题是已经设置好Twikoo的，比如我在用的Stack主题。只需要在整个hugo的设置文件里(此处以hugo.yaml为例)。将下面链接里<strong>XXX</strong>的部分更换为上一步里注册的netlify三级域名即可。</p>
 <p>语言不要忘记设置成中文，否则可能显示别的语言。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -356,7 +366,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">provider</span><span class="p">:</span><span class="w"> </span><span class="l">twikoo</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">twikoo</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	  </span><span class="nt">envId</span><span class="p">:</span><span class="w"> </span><span class="l">https://**XXX**.netlify.app/.netlify/functions/twikoo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	  </span><span class="nt">envId</span><span class="p">:</span><span class="w"> </span><span class="l">https://XXX.netlify.app/.netlify/functions/twikoo</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	  </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l">zh-cn</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
@@ -452,7 +462,7 @@
         
             <div class="article-image">
                 
-                    <img src="https://onedrive.live.com/embed?resid=3549D648A51DAB39%21136&amp;authkey=%21AFmdXVHeH_KzOYk&amp;width=600&amp;height=333" loading="lazy" data-key="领养狗狗的二三事" data-hash="https://onedrive.live.com/embed?resid=3549D648A51DAB39%21136&amp;authkey=%21AFmdXVHeH_KzOYk&amp;width=600&amp;height=333"/>
+                    <img src="https://onedrive.live.com/embed?resid=CCE11E9F02B677A7%21128&amp;authkey=%21AIAbtFrqW84viEg&amp;width=600&amp;height=333" loading="lazy" data-key="领养狗狗的二三事" data-hash="https://onedrive.live.com/embed?resid=CCE11E9F02B677A7%21128&amp;authkey=%21AIAbtFrqW84viEg&amp;width=600&amp;height=333"/>
                 
             </div>
         
